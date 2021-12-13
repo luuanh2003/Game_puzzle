@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game Puzzle</title>
+    <style>
+.cat{
+    box-shadow: red 4px 4px 9px;
+}
+    </style>
+</head>
+<body>
+<img id="cat1" src="image/Saved Pictures/funny-cat1_part1x1.jpg" height="100" width="200" onclick="changeImage1()"/><br>
+<img id="cat2" src="image/Saved Pictures/funny-cat1_part2x1.jpg" height="100" width="200"onclick="changeImage2()"/><br>
+<img id="cat3"src="image/Saved Pictures/funny-cat1_part3x1.jpg" height="100" width="200" onclick="changeImage3()"/><br>
+<img id="cat4"src="image/Saved Pictures/funny-cat1_part4x1.jpg" height="100" width="200" onclick="changeImage4()"/><br>
+<img id="cat5"src="image/Saved Pictures/funny-cat1_part5x1.jpg" height="100" width="200" onclick="changImage5()"/><br>
+</body>
+<script>
+    let cat1=document.getElementById('cat1')
+    cat1.src="image/Saved Pictures/funny-cat1_part1x1.jpg"
+    let cat2=document.getElementById('cat2')
+    cat2.src="image/Saved Pictures/funny-cat1_part2x1.jpg"
+    let cat3=document.getElementById('cat3')
+    cat3.src="image/Saved Pictures/funny-cat1_part3x1.jpg"
+    let cat4=document.getElementById('cat4')
+    cat4.src="image/Saved Pictures/funny-cat1_part4x1.jpg"
+    let cat5=document.getElementById('cat5')
+    cat5.src="image/Saved Pictures/funny-cat1_part5x1.jpg"
+    let count1=0
+    let count2=0
+    let count3=0
+    let count4=0
+    let count5=0
+    function changeImage1(){
+        count1++;
+        if (count1==1){
+            cat1.src="image/Saved Pictures/funny-cat1_part1x1.jpg"
+        }else if (count1==2){
+            cat1.src="image/Saved Pictures/monkey_part1x1.jpg"
+        }else {
+            count1=0
+            cat1.src="image/Saved Pictures/panda_swap_part1x1.jpg"}
+        }
+        function changeImage2(){
+            count2++;
+            if (count2==1){
+                cat2.src="image/Saved Pictures/funny-cat1_part2x1.jpg"
+            }else if (count2==2){
+                cat2.src="image/Saved Pictures/monkey_part2x1.jpg"
+            }else {
+                count2=0
+                cat2.src="image/Saved Pictures/panda_swap_part2x1.jpg"}
+
+        }function changeImage3(){
+        count3++;
+        if (count3==1){
+            cat3.src="image/Saved Pictures/funny-cat1_part3x1.jpg"
+        }else if (count3==2){
+            cat3.src="image/Saved Pictures/monkey_part3x1.jpg"
+        }else {
+            count3=0
+            cat3.src="image/Saved Pictures/panda_swap_part3x1.jpg"}
+    }function changeImage4(){
+        count4++;
+        if (count4==1){
+            cat4.src="image/Saved Pictures/funny-cat1_part4x1.jpg"
+        }else if (count4==2){
+            cat4.src="image/Saved Pictures/monkey_part4x1.jpg"
+        }else {
+            count4=0
+            cat4.src="image/Saved Pictures/panda_swap_part4x1.jpg"}
+    }function changImage5(){
+        count5++;
+        if (count5==1){
+            cat5.src="image/Saved Pictures/funny-cat1_part5x1.jpg"
+        }else if (count5==2){
+            cat5.src="image/Saved Pictures/monkey_part5x1.jpg"
+        }else {
+            count5=0
+            cat5.src="image/Saved Pictures/panda_swap_part5x1.jpg"}
+    }
+</script>
+</html>
